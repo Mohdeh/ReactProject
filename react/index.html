@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Landon Hotel</title>
+  <link rel="stylesheet" href="../../../landonhotel.com/css/style.css">
+  <link rel="stylesheet" href="../../../assets/hotel-statuses.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+  <header id="intro">
+    <article class="fullheight">
+      <div class="hgroup">
+        <h1>Landon Hotel</h1>
+        <h2>West London</h2>
+        <p><a href="#status"><img src="../../../landonhotel.com/images/misc/arrow.png" alt="down arrow"></a></p>
+      </div>
+    </article>
+
+    <nav id="nav">
+      <div class="navbar">
+        <div class="brand"><a href="#welcome">Landon <span>Hotel</span></a></div>
+        <ul>
+          <li><a class="icon events" href="#status"><span>status</span></a></li>
+          <li><a class="icon attractions" href="#attractions"><span>attractions</span></a></li>
+        </ul>
+      </div><!-- navbar -->
+    </nav>
+  </header>
+<main id="wrapper">
+  <div class="scene" id="welcome">
+    <article class="content">
+      <div class="gallery">
+        <img src="../../../landonhotel.com/images/hotel/intro_room.jpg" alt="Intro Gallery Room Sample Pictures">
+        <img src="../../../landonhotel.com/images/hotel/intro_pool.jpg" alt="Intro Gallery Pool Sample Pictures">
+        <img src="../../../landonhotel.com/images/hotel/intro_dining.jpg" alt="Intro Gallery Dining Sample Pictures">
+        <img src="../../../landonhotel.com/images/hotel/intro_attractions.jpg" alt="Intro Gallery Attractions Sample Pictures">
+        <img class="hidesm" src="../../../landonhotel.com/images/hotel/intro_wedding.jpg" alt="Intro Gallery Dining Sample Pictures">
+      </div>
+      <h1>Welcome to the Landon&nbsp;Hotel</h1>
+      <p>The original Landon perseveres after 50 years in the heart of West London. The West End neighborhood has something for everyone—from theater to dining to historic sights. And the not-to-miss Rooftop Cafe is a great place for travelers and locals to engage over drinks, food, and good&nbsp;conversation. &nbsp;To learn more about the Landon Hotel in the West End, browse our website and <a href="../../../landonhotel.com/files/landon_information_sheet_London.pdf">download our handy information sheet</a>.</p>
+    </article>
+  </div><!-- welcome -->
+  <div class="scene" id="status">
+      <article class="event fullheight" id="businessmeetings">
+        <div class="content">
+          <h2>Status Updates</h2>
+
+          <div id="react-statusmanager"></div>
+        </div><!-- content -->
+      </article><!-- article -->
+  </div><!-- events -->
+  <div class="scene fullheight" id="attractions">
+    <article class="content">
+      <h1>Local Attractions</h1>
+        <p>Whether you’re a theater enthusiast, enjoy epic shopping, or love to stroll and people watch, London’s West End has an endless opportunity to partake. The heart of London’s "Theatreland" offering the best in drama, comedy, and musical productions.</p>
+    </article>
+  </div><!-- attractions -->
+</main>
+<footer class="scene">
+  <article class="content">
+    <div id="socialmedia">
+      <ul class="group">
+        <li><a href="https://twitter.com/"><img class="icon" src="../../../landonhotel.com/images/socialmedia/twitter.png" alt="icon for twitter" /></a></li>
+        <li><a href="http://www.facebook.com/"><img class="icon" src="../../../landonhotel.com/images/socialmedia/facebook.png" alt="icon for facebook" /></a></li>
+        <li><a href="http://www.youtube.com/"><img class="icon" src="../../../landonhotel.com/images/socialmedia/youtube.png" alt="icon for youtube" /></a></li>    
+      </ul>      
+    </div>
+  </article>
+</footer>
+  <!--<script src="../../../landonhotel.com/js/script.js"></script>-->
+
+  <script crossorigin src="https://unpkg.com/date-and-time@0.6/date-and-time.js"></script>
+  <script>window.date || document.write('<script crossorigin src="../../../node_modules/date-and-time/date-and-time.js"><\/script>')</script>
+
+  <!--
+  Polyfill for ES6 promise support for axios
+  <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.js"></script>
+  -->
+
+  <script crossorigin src="https://unpkg.com/axios@0.17/dist/axios.min.js"></script>
+  <script>window.axios || document.write('<script crossorigin src="../../../node_modules/axios/dist/axios.min.js"><\/script>')</script>
+
+  <!--
+  Polyfills for older browsers
+  @see https://reactjs.org/docs/javascript-environment-requirements.html
+  <script crossorigin src="https://unpkg.com/core-js@2.5.1/client/shim.min.js"></script>
+  <script>window.core || document.write('<script crossorigin src="../../../node_modules/core-js/client/shim.min.js"><\/script>')</script>
+  <script src="../../../assets/polyfills/raf-3.4.0-polyfill.min.js"></script>
+  -->
+
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script>window.React || document.write('<script crossorigin src="../../../node_modules/react/umd/react.development.js"><\/script>')</script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script>window.ReactDOM || document.write('<script crossorigin src="../../../node_modules/react-dom/umd/react-dom.development.js"><\/script>')</script>
+
+  <script src="hotel-dist.js"></script>
+</body>
+
+</html>
